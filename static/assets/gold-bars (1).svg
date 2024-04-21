@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 256 256" fill="none" id="my-svg">
+  <defs>
+    <linearGradient id="gradient1">
+      <stop class="stop1" offset="0%" stop-color="#8f66ff"></stop>
+      <stop class="stop2" offset="100%" stop-color="#3d12ff"></stop>
+    </linearGradient>
+  </defs>
+  <rect id="backgr" width="256" height="256" fill="#ffffff" rx="60"></rect>
+  <g id="group" transform="translate(0,0) scale(1)">
+    <path d="M65.524 149.333H105.143L128.000 202.667H42.667L65.524 149.333Z" fill="#00ff11" stroke-width="14" id="filltone" stroke="#1300ff" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M150.858 149.333H190.476L213.333 202.667H128.000L150.858 149.333Z" fill="#00ff11" stroke-width="14" id="filltone" stroke="#1300ff" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M106.667 96.000H149.333L170.667 149.333H85.333L106.667 96.000Z" fill="#00ff11" stroke-width="14" id="filltone" stroke="#1300ff" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M128.000 202.667L105.143 149.333H65.524L42.667 202.667H128.000ZM128.000 202.667H213.333L190.476 149.333H150.858L128.000 202.667ZM53.333 53.333L74.667 74.667M202.667 53.333L181.333 74.667M128.000 32.000V53.333M106.667 96.000H149.333L170.667 149.333H85.333L106.667 96.000Z" stroke="#1300ff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" id="stroketone"></path>
+  </g>
+</svg>

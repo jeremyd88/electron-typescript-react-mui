@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 256 256" fill="none" id="my-svg">
+  <defs>
+    <linearGradient id="gradient1">
+      <stop class="stop1" offset="0%" stop-color="#8f66ff"></stop>
+      <stop class="stop2" offset="100%" stop-color="#3d12ff"></stop>
+    </linearGradient>
+  </defs>
+  <rect id="backgr" width="256" height="256" fill="#ffffff" rx="60"></rect>
+  <g id="group" transform="translate(0,0) scale(1)">
+    <path d="M32.000 138.667C32.000 126.884 41.551 117.333 53.333 117.333H202.667C214.449 117.333 224.000 126.884 224.000 138.667V181.333C224.000 204.897 204.897 224.000 181.333 224.000H74.667C51.103 224.000 32.000 204.897 32.000 181.333V138.667Z" fill="#00ff11" stroke-width="14" id="filltone" stroke="#1300ff" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M64.000 117.333V96.000C64.000 60.654 92.654 32.000 128.000 32.000C151.689 32.000 172.372 44.870 183.438 64.000C185.389 67.373 187.041 70.941 188.358 74.667M128.000 181.333V160.000M74.667 224.000H181.333C204.897 224.000 224.000 204.897 224.000 181.333V138.667C224.000 126.884 214.449 117.333 202.667 117.333H53.333C41.551 117.333 32.000 126.884 32.000 138.667V181.333C32.000 204.897 51.103 224.000 74.667 224.000Z" stroke="#1300ff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" id="stroketone"></path>
+  </g>
+</svg>

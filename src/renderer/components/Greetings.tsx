@@ -1,19 +1,52 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
+
+import ActionAreaCard from "./ActionAreaCard";
+import Paper from '@mui/material/Paper';
 import React from "react";
-import electronLogo from "../../../static/electron.svg";
+import coin from "../../../static/assets/set1/coin.svg"
+import linkalt from "../../../static/assets/set1/link-alt.svg"
+import nft from "../../../static/assets/solo-2tone/analytics.svg"
+import qrcode from "../../../static/assets/qr-code.svg"
+import security from "../../../static/assets/user-security.svg"
+import settings from "../../../static/assets/set1/settings2.svg"
+import shieldcheck from "../../../static/assets/shield-check.svg"
+import wallet2 from "../../../static/wallet2.svg"
 
 export default function Greetings(): JSX.Element {
   return (
-    <Container maxWidth="md" sx={{ mt: 8 }}>
-      <Grid container justifyContent="center">
-        <Box component="img" src={electronLogo} width={200} height={200} />
-      </Grid>
-      <Typography variant="h1" textAlign="center" sx={{ mt: 8 }}>
-        Electron boilerplate with TypeScript, React, and MUI
+    <Container>
+      <Typography variant="h1" textAlign="center" sx={{ mt: 3, marginBottom: 3 }}>
+        VerusMaker RPC Toolbox
       </Typography>
-      <Typography variant="body1" textAlign="center" sx={{ mt: 2 }}>
-        Made by HelloSoftware
-      </Typography>
+      <Box sx={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        '& > :not(style)': {
+          m: 1,
+          width: 128,
+          height:128,
+        },
+      }}
+    >
+      <ActionAreaCard cardLabel="Wallet" imageUrl={wallet2} to="/getblockhash" />
+      <Paper elevation={20} />
+      <ActionAreaCard cardLabel="Create" imageUrl={coin} to="/createtokenform" />
+      <Paper elevation={20} />
+      <ActionAreaCard cardLabel="PBaaS" imageUrl={linkalt} to="/blockchain" />
+      <Paper elevation={20} />
+      <ActionAreaCard cardLabel="Vault" imageUrl={shieldcheck} to="/vault" />
+      <Paper elevation={20} />
+      <ActionAreaCard cardLabel="VerusID" imageUrl={security} to="/verusid" />
+      <Paper elevation={20} />
+      <ActionAreaCard cardLabel="NFT" imageUrl={nft} to="/marketplace" />
+      <Paper elevation={20} />
+      <ActionAreaCard cardLabel="Tools" imageUrl={qrcode} to="/tools" />
+      <Paper elevation={20} />
+      <ActionAreaCard cardLabel="Settings" imageUrl={settings} to="/settings" /> 
+       {/* <Grid container justifyContent="normal" alignItems="center" spacing={0.5}>
+           
+       </Grid> */}
+       </Box>
     </Container>
   );
 }

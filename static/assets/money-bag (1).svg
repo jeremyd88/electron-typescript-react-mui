@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 256 256" fill="none" id="my-svg">
+  <defs>
+    <linearGradient id="gradient1">
+      <stop class="stop1" offset="0%" stop-color="#8f66ff"></stop>
+      <stop class="stop2" offset="100%" stop-color="#3d12ff"></stop>
+    </linearGradient>
+  </defs>
+  <rect id="backgr" width="256" height="256" fill="#ffffff" rx="60"></rect>
+  <g id="group" transform="translate(0,0) scale(1)">
+    <path d="M203.636 166.982C213.561 194.769 192.961 224.000 163.456 224.000H92.544C63.039 224.000 42.439 194.769 52.363 166.983L85.333 74.667L64.000 32.000L192.000 32.000L170.667 74.667L203.636 166.982Z" fill="#00ff11" stroke-width="14" id="filltone" stroke="#1300ff" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M85.333 74.667L52.363 166.983C42.439 194.769 63.039 224.000 92.544 224.000H163.456C192.961 224.000 213.561 194.769 203.636 166.982L170.667 74.667M85.333 74.667L64.000 32.000L192.000 32.000L170.667 74.667M85.333 74.667H170.667M85.333 74.667H64.000M170.667 74.667H192.000M149.333 117.333H122.667C113.829 117.333 106.666 124.497 106.666 133.333C106.666 142.170 113.829 149.333 122.667 149.333H133.333C142.170 149.333 149.333 156.497 149.333 165.333C149.333 174.170 142.170 181.333 133.333 181.333H106.666M128.000 117.333V106.667M128.000 192.000V181.333" stroke="#1300ff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" id="stroketone"></path>
+  </g>
+</svg>

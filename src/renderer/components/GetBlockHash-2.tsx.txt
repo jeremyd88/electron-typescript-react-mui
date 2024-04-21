@@ -1,0 +1,97 @@
+import React, { useState } from 'react';
+
+import axios from 'axios';
+
+function GetBlockHash() {
+  const [blockHeight, setBlockHeight] = useState('');
+  const [blockHash, setBlockHash] = useState('');
+  const [ip, setIp] = useState('localhost');
+  const [port, setPort] = useState('');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+
+  const handleChange = <T extends string | number>(
+    event: React.ChangeEvent<HTMLInputElement>,
+    setState: React.Dispatch<React.SetStateAction<T>>
+  ) => {
+    setState(event.target.value as T);
+  };
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const rpcData = {
+      jsonrpc: "2.0",
+      id: 1,
+      method: "getblockhash",
+      params: [parseInt(blockHeight)],
+    };
+
+    const config = {
+      auth: {
+        username: username,
+        password: password,
+      },
+    };
+
+    const url = `http://${ip}:${port}`;
+
+    try {
+      const response = await axios.post(url, rpcData, config);
+      setBlockHash(response.data.result);
+      setError("");
+    } catch (error) {
+      setError("Error retrieving block hash. Please try again.");
+      setBlockHash("");
+    }
+  };
+
+  return (
+    <div>
+      <form onSubmit={handleSubmit} className="form-container">
+        <label>
+          <div className="label-text">
+            Block Height
+            <br />
+            <input type="number" value={blockHeight} onChange={(event) => handleChange(event, setBlockHeight)} className="input-field" />
+          </div>
+        </label>
+        <br />
+        <label>
+        <div className="label-text">
+          IP Address
+          <input type="text" value={ip} onChange={(event) => handleChange(event, setIp)} className="input-field" />
+          </div>
+        </label>
+        <br />
+        <label>
+        <div className="label-text">
+          Port Number
+          <input type="number" value={port} onChange={(event) => handleChange(event, setPort)} className="input-field" />
+        </div>
+        </label>
+        <br />
+        <label>
+        <div className="label-text">
+          RPC Username
+          <input type="text" value={username} onChange={(event) => handleChange(event, setUsername)} className="input-field" />
+       </div>
+        </label>
+        <br />
+        <label>
+        <div className="label-text">
+          RPC Password
+          <input type="password" value={password} onChange={(event) => handleChange(event, setPassword)} className="input-field" />
+        </div>
+        </label>
+        <br />
+        <button type="submit" className="submit-button">Get Block Hash</button>
+      </form>
+      {blockHash && <p>Block Hash: {blockHash}</p>}
+      {error && <p className="error-message">{error}</p>}
+    </div>
+  );
+}
+
+export default GetBlockHash;

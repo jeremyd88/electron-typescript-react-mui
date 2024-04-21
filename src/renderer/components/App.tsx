@@ -1,7 +1,15 @@
 import { Box, CssBaseline, ThemeProvider } from "@mui/material";
+import {
+  Route,
+  BrowserRouter as Router,
+  Routes
+} from "react-router-dom";
+
+import CreateTokenForm from "./CreateTokenForm";
+import GetBlockHash from "./GetBlockHash";
+import Greetings from "./Greetings";
 import React from "react";
 import theme from "../theme";
-import Greetings from "./Greetings";
 
 export default function App(): JSX.Element {
   return (
@@ -11,12 +19,22 @@ export default function App(): JSX.Element {
       <CssBaseline />
       <Box
         sx={{
-          backgroundColor: (theme) => theme.palette.background.default,
+          backgroundColor: (theme) => theme.palette.secondary.main,
         }}
       >
         <main>
           {/* This is where your app content should go */}
-          <Greetings />
+          {/* <Greetings /> */}
+          <Router> 
+              <Routes> 
+                  <Route path="/" element={<Greetings />} /> 
+                  <Route path="/getblockhash"
+                      element={<GetBlockHash />} /> 
+                  <Route path="/createtokenform" 
+                      element={<CreateTokenForm />} />
+                  <Route path="/greetings" element={<Greetings />} />
+              </Routes> 
+          </Router> 
         </main>
       </Box>
     </ThemeProvider>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 256 256" fill="none" id="my-svg">
+  <defs>
+    <linearGradient id="gradient1">
+      <stop class="stop1" offset="0%" stop-color="#8f66ff"></stop>
+      <stop class="stop2" offset="100%" stop-color="#3d12ff"></stop>
+    </linearGradient>
+  </defs>
+  <rect id="backgr" width="256" height="256" fill="#ffffff" rx="60"></rect>
+  <g id="group" transform="translate(0,0) scale(1)">
+    <path d="M42.667 96.000L64.000 42.667H192.000L213.333 96.000V128.000L202.667 138.667V224.000H53.333V138.667L42.667 128.000V96.000Z" fill="#00ff11" stroke-width="14" id="filltone" stroke="#1300ff" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M149.333 224.000V170.667H106.667V224.000M202.667 138.667V224.000H53.333V138.667M213.333 96.000L192.000 42.667H64.000L42.667 96.000M213.333 96.000H42.667M213.333 96.000V117.333C213.333 129.116 203.782 138.667 192.000 138.667C180.218 138.667 170.667 129.116 170.667 117.333M42.667 96.000V117.333C42.667 129.116 52.218 138.667 64.000 138.667C75.782 138.667 85.333 129.116 85.333 117.333M85.333 117.333V96.000M85.333 117.333C85.333 129.116 94.885 138.667 106.667 138.667C118.449 138.667 128.000 129.116 128.000 117.333M128.000 117.333V96.000M128.000 117.333C128.000 129.116 137.551 138.667 149.333 138.667C161.116 138.667 170.667 129.116 170.667 117.333M170.667 117.333V96.000" stroke="#1300ff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" id="stroketone"></path>
+  </g>
+</svg>

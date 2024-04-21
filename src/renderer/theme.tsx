@@ -5,25 +5,25 @@ import { createTheme } from "@mui/material/styles";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#9EEAF9",
+      main: "#FFFFFF",
     },
     secondary: {
-      main: "#9575CD",
+      main: "#3165D4",
     },
     background: {
-      default: "#2C2E3B",
+      default: "#1C1C1C",
     },
   },
   typography: {
     fontWeightMedium: 600,
-    fontSize: 17,
+    fontSize: 10,
     h1: {
       fontSize: "2.2rem",
       fontWeight: 400,
-      color: "#9EEAF9",
+      color: "#0A3FB1",
     },
     body1: {
-      color: "#9EEAF9",
+      color: "#000000",
     },
   },
 });
