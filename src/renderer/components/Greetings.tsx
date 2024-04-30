@@ -1,7 +1,6 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 
 import ActionAreaCard from "./ActionAreaCard";
-import Paper from '@mui/material/Paper';
 import React from "react";
 import coin from "../../../static/assets/set1/coin.svg"
 import linkalt from "../../../static/assets/set1/link-alt.svg"
@@ -29,19 +28,18 @@ export default function Greetings(): JSX.Element {
       }}
     >
       <ActionAreaCard cardLabel="Wallet" imageUrl={wallet2} to="/getblockhash" />
-      <Paper elevation={20} />
       <ActionAreaCard cardLabel="Create" imageUrl={coin} to="/createtokenform" />
-      <Paper elevation={20} />
-      <ActionAreaCard cardLabel="PBaaS" imageUrl={linkalt} to="/blockchain" />
-      <Paper elevation={20} />
+      {/* <Paper elevation={20} /> */}
+      <ActionAreaCard cardLabel="PBaaS" imageUrl={linkalt} to="/getinfo" />
+      {/* <Paper elevation={20} /> */}
       <ActionAreaCard cardLabel="Vault" imageUrl={shieldcheck} to="/vault" />
-      <Paper elevation={20} />
+      {/* <Paper elevation={20} /> */}
       <ActionAreaCard cardLabel="VerusID" imageUrl={security} to="/verusid" />
-      <Paper elevation={20} />
+      {/* <Paper elevation={20} /> */}
       <ActionAreaCard cardLabel="NFT" imageUrl={nft} to="/marketplace" />
-      <Paper elevation={20} />
+      {/* <Paper elevation={20} /> */}
       <ActionAreaCard cardLabel="Tools" imageUrl={qrcode} to="/tools" />
-      <Paper elevation={20} />
+      {/* <Paper elevation={20} /> */}
       <ActionAreaCard cardLabel="Settings" imageUrl={settings} to="/settings" /> 
        {/* <Grid container justifyContent="normal" alignItems="center" spacing={0.5}>
            

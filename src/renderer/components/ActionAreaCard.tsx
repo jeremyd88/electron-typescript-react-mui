@@ -17,7 +17,7 @@ export default function ActionAreaCard({
   cardLabel: string;
 }): JSX.Element {
   return (
-    <Card>
+    <Card elevation={24}>
       <CardActionArea>
         <Link to={to}>
           <CardMedia component="img" src={imageUrl} width={0} height={70} />

@@ -1,6 +1,7 @@
-import { app, BrowserWindow } from "electron";
 import * as path from "path";
 import * as url from "url";
+
+import { BrowserWindow, app } from "electron";
 
 let mainWindow: Electron.BrowserWindow | null;
 
@@ -10,6 +11,7 @@ function createWindow() {
     height: 700,
     backgroundColor: "#f2f2f2",
     webPreferences: {
+      webSecurity: false,
       nodeIntegration: true,
       contextIsolation: false,
       devTools: process.env.NODE_ENV !== "production",

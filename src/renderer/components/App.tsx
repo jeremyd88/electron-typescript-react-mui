@@ -7,6 +7,7 @@ import {
 
 import CreateTokenForm from "./CreateTokenForm";
 import GetBlockHash from "./GetBlockHash";
+import GetInfo from "./GetInfo";
 import Greetings from "./Greetings";
 import React from "react";
 import theme from "../theme";
@@ -27,12 +28,16 @@ export default function App(): JSX.Element {
           {/* <Greetings /> */}
           <Router> 
               <Routes> 
-                  <Route path="/" element={<Greetings />} /> 
-                  <Route path="/getblockhash"
-                      element={<GetBlockHash />} /> 
+                  <Route path="/" 
+                      element={<Greetings />} /> 
+                  <Route path="/getinfo"
+                      element={<GetInfo />} />
                   <Route path="/createtokenform" 
                       element={<CreateTokenForm />} />
-                  <Route path="/greetings" element={<Greetings />} />
+                  <Route path="/getblockhash"
+                      element={<GetBlockHash />} />
+                  <Route path="/greetings" 
+                      element={<Greetings />} />
               </Routes> 
           </Router> 
         </main>
